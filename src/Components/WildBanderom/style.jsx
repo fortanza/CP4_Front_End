@@ -83,67 +83,6 @@ const BanderomStyle = styled.header`
   .div22 {
     grid-area: 3 / 14 / 4 / 15;
   }
-
-  /* animation */
-  .move-up {
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-  }
-
-  .move-bottom {
-    animation-name: moveInRight;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-  }
-
-  @keyframes moveInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-10rem);
-    }
-
-    80% {
-      transform: translateX(1rem);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
-  }
-
-  @keyframes moveInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(10rem);
-    }
-
-    80% {
-      transform: translateX(-1rem);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
-  }
-
-  @keyframes moveInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(10rem);
-    }
-
-    80% {
-      transform: translateX(-1rem);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
-  }
 `;
 
 export default BanderomStyle;

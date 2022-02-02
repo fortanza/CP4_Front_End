@@ -13,12 +13,12 @@ const HeaderStyle = styled.header`
       left: 50%;
       transform: translate(-50%, -50%);
     }
-    img {
-      height: 6rem;
-      position: absolute;
-      top: 25%;
-      left: 5%;
-    }
+  }
+  .imgHeader {
+    height: 6rem;
+    position: absolute;
+    top: 25%;
+    right: 5%;
   }
 `;
 

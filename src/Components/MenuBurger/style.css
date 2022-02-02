@@ -1,0 +1,165 @@
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+.bm-burger-bars {
+  background: var(--color-secondary);
+}
+
+.bm-burger-bars-hover {
+  background: var(--color-primary);
+}
+
+.bm-cross-button {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  left: 250px;
+}
+
+.bm-cross {
+  background: var(--color-secondary);
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  min-height: 100%;
+}
+
+.bm-menu {
+  background-color: white;
+  width: 95%;
+  height: 100%;
+  -webkit-border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -moz-border-radius-bottomright: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.bm-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+.bm-item,
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-secondary);
+  padding: 15px;
+  font-size: 18px;
+}
+
+.bm-item:hover,
+a:hover {
+  color: white;
+  background-color: var(--color-primary);
+}
+
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.footer:hover {
+  background-color: transparent;
+  color: var(--color-secondary);
+}
+
+.followUs {
+  text-align: center;
+  font-size: 22px;
+  pointer-events: none;
+  padding-bottom: 30px;
+}
+
+.followUs:hover {
+  background-color: white;
+}
+
+.imgLogo {
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  padding-left: 8px;
+  cursor: pointer;
+}
+
+.allLogo {
+  padding-bottom: 20px;
+}
+
+.imgLogo:hover,
+.allLogo:hover {
+  background-color: white;
+}
+
+.legalMention {
+  text-align: center;
+  pointer-events: none;
+}
+
+.copyright {
+  font-style: italic;
+  text-align: center;
+  font-size: 13px;
+  padding-top: 20px;
+  pointer-events: none;
+}
+
+.copyrightYear {
+  font-weight: bolder;
+}
+
+/* mode mobile */
+@media only screen and (max-width: 768px) {
+  .bm-menu {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    text-align: center;
+  }
+
+  .bm-item,
+  a {
+    margin: 15px;
+    font-size: 18px;
+  }
+
+  .bm-cross-button {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    left: 90vw;
+  }
+
+  .footer {
+    margin-top: 30px;
+  }
+
+  .followUs {
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+
+  .allLogo {
+    padding-bottom: 15px;
+  }
+
+  .copyright {
+    padding: 10%;
+  }
+}

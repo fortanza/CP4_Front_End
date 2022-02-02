@@ -23,77 +23,77 @@ import victor from 'assets/victore.jpg';
 
 import BanderomStyle from './style';
 
-export default function Header() {
+export default function WildBanderom() {
   return (
     <BanderomStyle>
-      <section>
-        <article className="div1 img-student-container move-bottom">
+      <div className="wild-student-container">
+        <article className="div1">
           <img className="img-student" src={benoit} alt="Benoit" />
         </article>
-        <article className="div2 img-student-container move-up">
+        <article className="div2">
           <img className="img-student" src={bertrand} alt="Bertrand" />
         </article>
-        <article className="div3 img-student-container move-bottom">
+        <article className="div3">
           <img className="img-student" src={caroline} alt="Caroline" />
         </article>
-        <article className="div4 img-student-container move-up">
+        <article className="div4">
           <img className="img-student" src={cedric} alt="Cedric" />
         </article>
-        <article className="div5 img-student-container move-bottom">
+        <article className="div5">
           <img className="img-student" src={claire} alt="Claire" />
         </article>
-        <article className="div6 img-student-container move-up">
+        <article className="div6">
           <img className="img-student" src={franck} alt="Franck" />
         </article>
-        <article className="div7 img-student-container move-bottom">
+        <article className="div7">
           <img className="img-student" src={guillaume} alt="Guillaume" />
         </article>
-        <article className="div8 img-student-container move-up">
+        <article className="div8">
           <img className="img-student" src={guillaumeK} alt="guillaumeK" />
         </article>
-        <article className="div9 img-student-container move-bottom">
+        <article className="div9">
           <img className="img-student" src={heloise} alt="Heloise" />
         </article>
-        <article className="div10 img-student-container move-up">
+        <article className="div10">
           <img className="img-student" src={jeremy} alt="Jeremy" />
         </article>
-        <article className="div11 img-student-container move-bottom">
+        <article className="div11">
           <img className="img-student" src={jonathan} alt="Jonathan" />
         </article>
-        <article className="div12 img-student-container move-up">
+        <article className="div12">
           <img className="img-student" src={luigi} alt="Luigi" />
         </article>
-        <article className="div13 img-student-container move-bottom">
+        <article className="div13">
           <img className="img-student" src={marion} alt="Marion" />
         </article>
-        <article className="div14 img-student-container move-up">
+        <article className="div14">
           <img className="img-student" src={nacyme} alt="Nacyme" />
         </article>
-        <article className="div15 img-student-container move-bottom">
+        <article className="div15">
           <img className="img-student" src={othmane} alt="Othmane" />
         </article>
-        <article className="div16 img-student-container move-up">
+        <article className="div16">
           <img className="img-student" src={pierre} alt="Pierre" />
         </article>
-        <article className="div17 img-student-container move-bottom">
+        <article className="div17">
           <img className="img-student" src={victor} alt="Victore" />
         </article>
-        <article className="div18 img-student-container move-up">
+        <article className="div18">
           <img className="img-student" src={quentin} alt="Quentin" />
         </article>
-        <article className="div19 img-student-container move-bottom">
+        <article className="div19">
           <img className="img-student" src={romain} alt="Romain" />
         </article>
-        <article className="div20 img-student-container move-up">
+        <article className="div20">
           <img className="img-student" src={sonia} alt="Sonia" />
         </article>
-        <article className="div21 img-student-container move-bottom">
+        <article className="div21">
           <img className="img-student" src={hacene} alt="Hacene" />
         </article>
-        <article className="div22 img-student-container move-up">
+        <article className="div22">
           <img className="img-student" src={loic} alt="Loic" />
         </article>
-      </section>
+      </div>
     </BanderomStyle>
   );
 }
