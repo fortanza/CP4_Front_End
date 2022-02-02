@@ -1,17 +1,17 @@
 .bm-burger-button {
-  position: fixed;
-  width: 36px;
-  height: 30px;
-  left: 36px;
-  top: 36px;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 40px;
+  height: 40px;
 }
 
 .bm-burger-bars {
-  background: var(--color-secondary);
+  background: white;
 }
 
 .bm-burger-bars-hover {
-  background: var(--color-primary);
+  background: white;
 }
 
 .bm-cross-button {
@@ -22,7 +22,7 @@
 }
 
 .bm-cross {
-  background: var(--color-secondary);
+  background: white;
 }
 
 .bm-menu-wrap {
@@ -58,7 +58,7 @@
 a {
   display: inline-block;
   text-decoration: none;
-  color: var(--color-secondary);
+  color: red;
   padding: 15px;
   font-size: 18px;
 }
@@ -66,100 +66,13 @@ a {
 .bm-item:hover,
 a:hover {
   color: white;
-  background-color: var(--color-primary);
+  background-color: #f65454;
 }
 
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.footer:hover {
-  background-color: transparent;
-  color: var(--color-secondary);
-}
-
-.followUs {
-  text-align: center;
-  font-size: 22px;
-  pointer-events: none;
-  padding-bottom: 30px;
-}
-
-.followUs:hover {
-  background-color: white;
-}
-
-.imgLogo {
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  padding: 5px;
-  padding-left: 8px;
-  cursor: pointer;
-}
-
-.allLogo {
-  padding-bottom: 20px;
-}
-
-.imgLogo:hover,
-.allLogo:hover {
-  background-color: white;
-}
-
-.legalMention {
-  text-align: center;
-  pointer-events: none;
-}
-
-.copyright {
-  font-style: italic;
-  text-align: center;
-  font-size: 13px;
-  padding-top: 20px;
-  pointer-events: none;
-}
-
-.copyrightYear {
-  font-weight: bolder;
-}
-
-/* mode mobile */
-@media only screen and (max-width: 768px) {
-  .bm-menu {
-    width: 100vw;
-    height: 100vh;
-    border-radius: 0;
-    text-align: center;
-  }
-
-  .bm-item,
-  a {
-    margin: 15px;
-    font-size: 18px;
-  }
-
-  .bm-cross-button {
-    height: 30px;
-    width: 30px;
-    position: relative;
-    left: 90vw;
-  }
-
-  .footer {
-    margin-top: 30px;
-  }
-
-  .followUs {
-    font-size: 30px;
-    padding-bottom: 15px;
-  }
-
-  .allLogo {
-    padding-bottom: 15px;
-  }
-
-  .copyright {
-    padding: 10%;
-  }
+.wildLogoBurger {
+  height: 3rem;
 }

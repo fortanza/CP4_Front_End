@@ -22,8 +22,8 @@ const GlobalStyle = createGlobalStyle`
   h1,h2,h3,h4,h5 {
     font-family: var(--font-family-first)
   }
-  body {
-    font-family: var(--font-family-second)
+  * {
+    font-family: 'Yellowtail', cursive;
   }
   `;
 export default GlobalStyle;
