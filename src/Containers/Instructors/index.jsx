@@ -1,4 +1,4 @@
-import Cards from 'Components/Cards';
+import UserCard from 'Components/Cards';
 import InstrustorStyle from './style';
 
 export default function Instructors() {
@@ -8,7 +8,7 @@ export default function Instructors() {
         <h2>Nos Formateurs</h2>
       </section>
       <section>
-        <Cards />
+        <UserCard />
       </section>
     </InstrustorStyle>
   );

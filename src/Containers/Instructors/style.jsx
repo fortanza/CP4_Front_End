@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const InstrustorStyle = styled.section`
   section {
-    height: 80vh;
     width: 90%;
     margin: 0 auto;
     color: #f65454;
