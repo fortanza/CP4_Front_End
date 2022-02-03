@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import benoit from 'assets/benoit.jpg';
 import CardStyle from './style';
 
 export default function UserCard() {
@@ -13,9 +14,9 @@ export default function UserCard() {
   };
   let flipClass;
   if (clicked) {
-    flipClass = 'card.is-flipped';
+    flipClass = 'card is-flipped';
   } else {
-    flipClass = 'base-state';
+    flipClass = 'card';
   }
   return (
     <CardStyle>
@@ -27,8 +28,15 @@ export default function UserCard() {
             onKeyPress={handleKeyPress}
             type="button"
           >
-            <div className="card__face card__face--front">front</div>
-            <div className="card__face card__face--back">back</div>
+            <div className="card__face card__face--front">
+              <img className="img-student" src={benoit} alt="Benoit" />
+              <p>Benoit Zenone</p>
+            </div>
+            <div className="card__face card__face--back">
+              <a href="https://www.google.com/" className="myButton">
+                En savoir plus
+              </a>
+            </div>
           </button>
         </div>
       </>
