@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import axios from 'axios';
 import FormStyle from './style';
 
 export default function WeForgotYou() {
@@ -12,12 +13,23 @@ export default function WeForgotYou() {
     animal: '',
     animalName: '',
     favoriteDish: '',
+    wildSide: '',
     hobby: '',
     skill: '',
     motivation: '',
   });
   const hSubmit = (evt) => {
     evt.preventDefault(evt.target.value);
+    axios
+      .post('/user', {
+        ...formData,
+      })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   };
   const hChangeFormData = (evt) => {
     const newData = { ...formData };
@@ -111,6 +123,15 @@ export default function WeForgotYou() {
                 type="text"
                 name="favoriteDish"
                 value={formData.favoriteDish}
+                onChange={hChangeFormData}
+              />
+            </div>
+            <div className="table">
+              <p>Ton Côté Wild </p>
+              <input
+                type="text"
+                name="wildSide"
+                value={formData.wildSide}
                 onChange={hChangeFormData}
               />
             </div>

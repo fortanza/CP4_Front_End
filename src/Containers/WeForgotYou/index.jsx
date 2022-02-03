@@ -1,15 +1,21 @@
 import { useState } from 'react';
+import axios from 'axios';
 import FormStyle from './style';
 
 export default function YouWantToLeave() {
   const [formData, SetFormData] = useState({
+    id: '',
     firstName: '',
     lastName: '',
     quality: '',
     campus: '',
   });
+
   const hSubmit = (evt) => {
     evt.preventDefault(evt.target.value);
+    axios
+      .delete('https://reqres.in/api/posts/'`${formData.id}`)
+      .then(() => console.log('Delete successful'));
   };
   const hChangeFormData = (evt) => {
     const newData = { ...formData };
